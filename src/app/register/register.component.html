@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 col-lg-6 margin-auto">
+    <div *ngIf="spinner" class="d-flex justify-content-center spinner">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" name="email" placeholder="Email" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm password:</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+          placeholder="Confirm password" ngModel>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <div class="error">
+      {{error}}
+    </div>
+  </div>
+</div>

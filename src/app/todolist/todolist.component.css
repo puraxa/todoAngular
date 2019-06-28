@@ -1,0 +1,47 @@
+.border {
+    border: solid 1.5px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+}
+.margin-padding {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+i:hover {
+    cursor: pointer;
+}
+input {
+    width: 100%;
+}
+.border-circle {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+}
+.i-pos{
+    padding-top: 7px;
+    padding-left: 0px;
+}
+.gray {
+    background-color: gray;
+}
+.empty-field {
+    color: red;
+    padding-left: 20px;
+}
+.fixed-pos{
+    display: none;
+}
+@media screen and (max-width: 576px){
+    .fixed-pos{
+        display: initial;
+        position: fixed;
+        bottom: 5px;
+        left: 5px;
+    }
+    .show-none{
+        display: none;
+    }
+}
